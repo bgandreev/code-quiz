@@ -26,6 +26,7 @@ for (var i = 0; i < answers.length; i++) {
             answerFeedback.textContent = "=== CORRECT ===";
 
         } if (element === 'btn answer incorrect' && parent < 6) {
+
             document.getElementById(parent).setAttribute('class', 'hide');
             document.getElementById(parent + 1).setAttribute('class', '');
             answerFeedback.textContent = "=== INCORRECT ===";
@@ -46,12 +47,3 @@ for (var i = 0; i < answers.length; i++) {
 
 
 
-// function startTimer() {
-//     var myinterval = setInterval(function() {
-//         document.querySelector("#countdown").textContent = "timer: " + time;
-//         time--;
-//         if (time < 0) {
-//             clearInterval(myinterval);
-//         };
-//     }, 1000);
-// };
