@@ -1,54 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="resources/style.css">
-        <title>Document</title>
+        <link rel="stylesheet" href="./resources/style.css">
+        <title>Coding Quiz</title>
     </head>
 
     <body>
         <div class="main-container">
-            <header>
-                <nav>
-                    <div>
-                        <h5>
-                            <a href="">View High Scores</a>
-                        </h5>
-                    </div>
-                    <div>
-                        <h5>
-                            Remaining Time: 0
-                        </h5>
-                    </div>
-                </nav>
-            </header>
-
-            <main>
-                <div class="container">
-                    <div>
-                        <h1>
-                            Coding Quiz Challenge
-                        </h1>
-                        <p>
-                            Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds. 
-                        </p>
-                        <button class="btn">Start Quiz</button>
-                    </div>
+            
+            <div class="hdr">
+                <div>
+                    <h4>
+                        <a href="">View High Scores</a>
+                    </h4>
+                </div>
+                <div>
+                    <h4>
+                        Remaining Time: 0
+                    </h4>
+                </div>
+            </div>
+            
+            <div class="inner-container">
+                
+                <div class="" id="start">
                     <h1>
                         Coding Quiz Challenge
                     </h1>
                     <p>
                         Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds. 
                     </p>
-                    <button class="btn">Start Quiz</button>
+                    <button id="start-btn" class="btn">Start Quiz</button>
                 </div>
-            </main>
+                
+                <div class="hide" id="1">
+                    <h3>
+                        Commonly used data types DO NOT include:
+                    </h3>
+                    <ul>
+                        <li class="btn answer incorrect">Strings</li>
+                        <li class="btn answer incorrect">Booleans</li>
+                        <li class="btn answer correct">Alerts</li>
+                        <li class="btn answer incorrect">Numbers</li>
+                    </ul>
+                </div>
+
+                <div class="hide" id="2">
+                    <h3>
+                        The condition in an if / else statement is enclosed within:
+                    </h3>
+                    <ul>
+                        <li class="btn answer incorrect">Quotes</li>
+                        <li class="btn answer incorrect">Curly brackets</li>
+                        <li class="btn answer correct">Parentheses</li>
+                        <li class="btn answer incorrect">Square brackets</li>
+                    </ul>
+                </div>
+                <div class="hide" id="3">
+                    <h3>
+                        Arrays in JavaScript can be used to store:
+                    </h3>
+                    <ul>
+                        <li class="btn answer incorrect">Numbers and strings</li>
+                        <li class="btn answer incorrect">Other arrays</li>
+                        <li class="btn answer incorrect">Booleans</li>
+                        <li class="btn answer correct">All of the above</li>
+                    </ul>
+                </div>
+                <div class="hide" id="4">
+                    <h3>
+                        String values must be enclosed within ____ when being assigned to variables:
+                    </h3>
+                    <ul>
+                        <li class="btn answer incorrect">Commas</li>
+                        <li class="btn answer incorrect">Curly brackets</li>
+                        <li class="btn answer correct">Quotes</li>
+                        <li class="btn answer incorrect">Parentheses</li>
+                    </ul>
+                </div>
+                <div class="hide" id="5">
+                    <h3>
+                        A very useful tool used during development and debugging for printing content to the debugger i:
+                    </h3>
+                    <ul>
+                        <li class="btn answer incorrect">Javascript</li>
+                        <li class="btn answer incorrect">Terminal / bash</li>
+                        <li class="btn answer incorrect">For loops</li>
+                        <li class="btn answer correct">Console.log</li>
+                    </ul>
+                </div>
+
+                <p id="feedback"></p>
+
+            </div>
             
             
-            <script src="resources/script.js"></script>
+            <script src="./resources/script.js"></script>
         </div>
     </body>
 
